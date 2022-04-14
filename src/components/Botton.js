@@ -18,6 +18,8 @@ transition: all 0.2s ease;
 &:hover{
     transform: scale(0.9);
 }
+
+//borde negro en el contorno del boton
 &::after{
     content: ' ';
     position: absolute;
