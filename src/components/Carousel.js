@@ -12,8 +12,8 @@ import Arrow from '../assets/Arrow.svg';
 
 import { EffectCards, Pagination, Autoplay, Navigation } from "swiper";
 
-import img1 from '../assets/Nfts/bighead-1.svg';
-import img2 from '../assets/Nfts/bighead-2.svg';
+import img1 from '../assets/Nfts/edit1.svg';
+import img2 from '../assets/Nfts/MF.svg';
 import img3 from '../assets/Nfts/bighead-3.svg';
 import img4 from '../assets/Nfts/bighead-4.svg';
 import img5 from '../assets/Nfts/bighead-5.svg';

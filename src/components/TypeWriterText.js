@@ -5,7 +5,7 @@ import "@fontsource/akaya-telivigala"
 import Bottom from './Botton'
 
 
-const Title = styled.h3`
+const Title = styled.h2`
 font-size: ${props => props.theme.fontxxl};
 text-transform: capitalize;
 width: 80%;
