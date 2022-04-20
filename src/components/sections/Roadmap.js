@@ -2,14 +2,13 @@ import gsap from 'gsap/all'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import React, { useLayoutEffect, useRef } from 'react'
 import styled from 'styled-components'
-import Vector from '../../Icons/Vector'
 import DrawSvg from '../DrawSvg'
 
 
 const Section = styled.section`
 min-height: 100vh;
 width: 100vw;
-background-color: ${props => props.theme.body};;
+background-color: ${props => props.theme.body};
 position: relative;
 `
 const Title = styled.h1`
@@ -170,7 +169,7 @@ const Roadmap = () => {
 
   return (
     <Section>
-      <Title>Roadmap</Title>
+      <Title>Roadmap.</Title>
       <Container>
           <SvgContainer>
             <DrawSvg />
@@ -178,11 +177,11 @@ const Roadmap = () => {
           <Items> 
           
             <Item> &nbsp;</Item>
-           <RoadmapItem addToRef={addToRefs} title={"Grand Opening "} subtext={"gldnvldfnv"} />
-           <RoadmapItem addToRef={addToRefs} title={"Great Benefits"} subtext={"gldnvldfnv"} />
-           <RoadmapItem addToRef={addToRefs} title={"Early Access"} subtext={"gldnvldfnv"} />
-           <RoadmapItem addToRef={addToRefs} title={"New Merch"} subtext={"gldnvldfnv"} />
-           <RoadmapItem addToRef={addToRefs} title={"Holders Ranking"} subtext={"gldnldfnv"} />
+           <RoadmapItem addToRef={addToRefs} title={"Grand Opening "} subtext={"Come on its free!!"} />
+           <RoadmapItem addToRef={addToRefs} title={"Great Benefits"} subtext={"Only on this week"} />
+           <RoadmapItem addToRef={addToRefs} title={"Early Access"} subtext={"Swipe up!"} />
+           <RoadmapItem addToRef={addToRefs} title={"New Merch"} subtext={"Great Products wait for you..."} />
+           <RoadmapItem addToRef={addToRefs} title={"Holders Ranking"} subtext={"The best value"} />
           </Items>
       </Container>
     </Section>

@@ -22,6 +22,9 @@ import img7 from '../assets/Nfts/bighead-7.svg';
 import img8 from '../assets/Nfts/bighead-8.svg';
 import img9 from '../assets/Nfts/bighead-9.svg';
 import img10 from '../assets/Nfts/bighead-10.svg';
+import img11 from '../assets/Nfts/bighead-11.svg';
+import img12 from '../assets/Nfts/bighead-12.svg';
+
 
 
 
@@ -111,6 +114,8 @@ const Carousel = () => {
         <SwiperSlide><img src={img8}  alt='The Weirdos'/></SwiperSlide>
         <SwiperSlide><img src={img9}  alt='The Weirdos'/></SwiperSlide>
         <SwiperSlide><img src={img10}  alt='The Weirdos'/></SwiperSlide>
+        <SwiperSlide><img src={img11}  alt='The Weirdos'/></SwiperSlide>
+        <SwiperSlide><img src={img12}  alt='The Weirdos'/></SwiperSlide>
 
       </Swiper>
   </Container>
