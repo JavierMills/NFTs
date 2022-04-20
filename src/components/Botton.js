@@ -44,6 +44,7 @@ const Botton = ({text, link}) => {
     <Btn>
         <a href={link} arial-label= {text} target="_blank" rel='noreferrer' > 
             {text}
+
         </a>
     </Btn>
   )

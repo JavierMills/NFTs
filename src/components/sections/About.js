@@ -5,7 +5,6 @@ import Botton from '../Botton';
 import {dark} from '../../styles/Themes'
 
 
-
 const Section = styled.section`
 min-height: 100vh;
 width: 100%;
@@ -93,6 +92,7 @@ const About = () => {
              <BotomContainer>
                
              <ThemeProvider theme={dark}>
+               
              <Botton text='Join Our Discord' link='#' /> 
              </ThemeProvider>
               </BotomContainer> 

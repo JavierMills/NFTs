@@ -138,12 +138,12 @@ const Team = () => {
       <Title >Team.</Title>
       <Container>
       <MemberComponent img={img1}  name='Avure' position='Co-Funder' />
-      <MemberComponent img={img2}  name='Viroideis' position='Founder' />
+      <MemberComponent img={img2}  name='Skills' position='Founder' />
       <MemberComponent img={img3}  name='Evex' position='Co-Funder' />
       <MemberComponent img={img4}  name='Sindresu' position='Developer' />
       <MemberComponent img={img5}  name='Hands' position='Backend' />
-      <MemberComponent img={img6}  name='Avoidies' position='FullStack' />
-      <MemberComponent img={img7}  name='Entein' position='Python Dev' />
+      <MemberComponent img={img6}  name='Vo' position='FullStack' />
+      <MemberComponent img={img7}  name='Kirby' position='Python Dev' />
       <MemberComponent img={img8}  name='Zapdos' position='Artist' />
       <MemberComponent img={img9}  name='Mortres' position='Front Developer' />
       <MemberComponent img={img10} name='Huskers' position='UI UX'  />
