@@ -12,7 +12,7 @@ import { light } from '../styles/Themes';
 
 const Section = styled.section`
 width: 100vw;
-height: 25rem;
+height: 20rem;
 position: relative;
 border-top: 2px solid ${props => props.theme.text};
 border-top: 2px solid ${props => props.theme.text};
