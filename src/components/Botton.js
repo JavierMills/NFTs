@@ -13,8 +13,8 @@ font-size: ${props => props.theme.fontsm};
 padding: 0.9rem 2.5rem;
 border-radius: 50px;
 cursor: pointer;
-transition: all 0.2s ease;  
-
+transition: all 0.2s ease; 
+z-index:2;
 &:hover{
     transform: scale(0.9);
 }
