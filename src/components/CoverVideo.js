@@ -10,6 +10,10 @@ video{
     width: 100%;
     height: auto;
 }
+
+@media(max-width: 64em){
+  max-width: 40vh;
+}
 `
 
 
