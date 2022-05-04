@@ -6,6 +6,7 @@ import Facebook from '../Icons/Facebook'
 import Twitter from '../Icons/Twitter'
 import Instagram from '../Icons/Instagram'
 import LinkedIn from '../Icons/LinkedIn'
+import GitHub from '../Icons/Github'
 
 
 const Section = styled.section`
@@ -45,16 +46,66 @@ margin: 1rem auto;
 
 &>*{
   padding-right: 0.5rem;
-  transform: all 0.2s ease;
+  transition: all 0.3s ease;
 
   &:hover{
     transform: scale(1.2);
   }
 }
 `
+const MenuItems = styled.div`
+list-style: none;
+width: 50%;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-gap: 1rem;
+`
+
+const Item = styled.li`
+//no ocupa toda la anchura disponible. Sólo crece en función de su contenido.
+width: fit-content;
+cursor: pointer;
+
+&::after{
+  content: ' ';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: ${props => props.theme.text};
+  transition: width 0.2s ease;
+}
+&:hover::after{
+  width: 100%;
+  
+}
+
+`
+const Boton = styled.div`
+width: 75%;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+a{
+  text-decoration: underline;
+  
+}
+`
 
 
 const Footer = () => {
+
+  const scrollTo = (id) => {
+    let element = document.getElementById(id);
+
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    })
+  }
+
   return (
     <Section>
       <Banner />
@@ -62,22 +113,42 @@ const Footer = () => {
           <Left>
             <Logo />
             <IconsList>
-            <a href='http://facebook.com' target='_blank' rel="noreferrer">
+            <a href='https://www.facebook.com/ArteMills' target='_blank' rel="noreferrer">
               <Facebook />
               </a>
-              <a href='http://facebook.com' target='_blank' rel="noreferrer">
+              <a href='https://twitter.com/JavierMills7?t=Tc5ecKkRkBMSxdNrfVRKew&s=09' target='_blank' rel="noreferrer">
               <Twitter />
               </a>
-              <a href='http://facebook.com' target='_blank' rel="noreferrer">
+              <a href='https://www.instagram.com/dime_mills/' target='_blank' rel="noreferrer">
               <Instagram />
               </a>
-              <a href='http://facebook.com' target='_blank' rel="noreferrer">
+              <a href='https://www.linkedin.com/in/ramiro-javier-martinez-cruz-816095224' target='_blank' rel="noreferrer">
               <LinkedIn/>
+              </a>
+              <a href='"https://github.com/JavierMills"' target='_blank' rel="noreferrer">
+              <GitHub />
               </a>
             </IconsList>
           </Left>
+         <MenuItems>
+            <Item onClick={() => scrollTo("home")}>Home</Item>
+            <Item onClick={() => scrollTo("about")}>About</Item>
+            <Item onClick={() => scrollTo("roadmap")}>RoadaMap</Item>
+            <Item onClick={() => scrollTo("team")}>Team</Item>
+            <Item onClick={() => scrollTo("faq")}>Faq</Item>
+            <Item onClick={() => scrollTo("showcase")}>ShowCase</Item>
+         </MenuItems> 
       </Container>
-
+      <Boton>
+        <span>
+          &copy; {new Date().getFullYear()} Weirdos Club. All rights reserved.
+        </span>
+        <span>
+          Made with &#10084; by <a href='https://www.facebook.com/ArteMills' target="_blank" rel='noopener noreferrer' >
+            Javier Mills
+          </a>
+        </span>
+      </Boton>
     </Section>
   )
 }

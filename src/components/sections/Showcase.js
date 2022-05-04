@@ -15,13 +15,16 @@ import ETH from '../../assets/icons8-ethereum-48.png';
 //estilo de la seccion completa
 const Section = styled.section`
 min-height: 100vh;
-width: 100vw;
-background-color: ${props => props.theme.text};
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-position: relative;
+    width: 100vw;
+    background-color: ${props => props.theme.text};
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
 
 &>*:first-child{
   animation-duration: 15s;
@@ -52,7 +55,7 @@ animation: ${move} linear infinite ${props => props.direction};
 
 //estilo de cada item
 const ItemContainer = styled.div`
-width: 12rem;
+width: 16rem;
 margin: 0 1rem;
 background-color: ${props => props.theme.body};
 border-radius: 20px;
@@ -150,7 +153,7 @@ const Showcase = () => {
 const Row1Ref= useRef(null);
 const Row2Ref= useRef(null);
   return (
-    <Section> 
+    <Section id='showcase'> 
       <Row direction="none" ref={Row1Ref}>
         <NtfItem  number={14} price={0.6}      img={img1} passref={Row1Ref}/>
         <NtfItem  number={10} price={0.5}      img={img2} passref={Row1Ref}/>

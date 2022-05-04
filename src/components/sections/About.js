@@ -26,7 +26,7 @@ align-items: center;
 
 `
 const Box = styled.div`
-width: 50%;
+width: 100%;
 height: 100%;
 display: flex;
 flex-direction: column;
@@ -71,7 +71,7 @@ margin: 0 auto;
 
 const About = () => {
   return (
-    <Section>
+    <Section id='about'>
       <Container>
         
         <Box >  <Carousel /></Box>

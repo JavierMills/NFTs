@@ -44,20 +44,64 @@ cursor: pointer;
   
 }
 `
+const HmbuergerMenu = styled.div`
+width: 1.5rem;
+height: 2px;
+background: ${props => props.theme.text};
 
+position: absolute;
+top: 2rem;
+left: 50%;
+transform: translateX(-50);
+display: flex;
+justify-content: center;
+align-content: center;
+
+
+
+//se usa junto con los pseudo-elementos :before y :after para generar contenido
+// que se adjunta antes o después de un selector CSS.
+&::after, &::before{
+  content: ' ';
+  width: 1.5rem;
+  height: 2px;
+  background: ${props => props.theme.text};
+  position: absolute;
+}
+&::after{
+  top:0.5rem;
+}
+&::before{
+  bottom:0.5rem;
+}
+`
 
 const Navigation = () => {
+
+    const ScrollTo = (id) =>{
+      let element= document.getElementById(id);
+
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest',
+      })
+    }
+
   return (
-    <Seccion>
+    <Seccion id='navigation'>
       <NavBar>
       <LogoText />
+      <HmbuergerMenu>
+        &nbsp;
+      </HmbuergerMenu>
       <Menu>
-        <MenuItem>Home</MenuItem>
-        <MenuItem>About</MenuItem>
-        <MenuItem>RoadMap</MenuItem>
-        <MenuItem>Showcase</MenuItem>
-        <MenuItem>Team</MenuItem>
-        <MenuItem>Faq</MenuItem>
+       <MenuItem onClick={() => ScrollTo('home')}>Home</MenuItem>
+       <MenuItem onClick={() => ScrollTo('about')}>About</MenuItem>
+       <MenuItem onClick={() => ScrollTo('roadmap')}>RoadMap</MenuItem>
+       <MenuItem onClick={() => ScrollTo('showcase')}>Showcase</MenuItem>
+       <MenuItem onClick={() => ScrollTo('team')}>Team</MenuItem>
+       <MenuItem onClick={() => ScrollTo('faq')}>Faq</MenuItem>
       </Menu>
         <Botton text= "Connect Wallet" link="https://google.com" /> 
       </NavBar>  
