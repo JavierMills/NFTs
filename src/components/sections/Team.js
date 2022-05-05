@@ -42,6 +42,15 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 flex-wrap: wrap;
+
+@media(max-width: 64em){
+  width:80%;
+}
+
+@media(max-width: 48em){
+  width:90%;
+  justify-content: center;
+}
 `
 
 

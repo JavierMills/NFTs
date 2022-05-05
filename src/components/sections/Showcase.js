@@ -27,11 +27,18 @@ min-height: 100vh;
     overflow: hidden;
 
 &>*:first-child{
-  animation-duration: 15s;
+  animation-duration: 20s;
+
+  @media (max-width: 30em){
+    animation-duration: 20s;
+  }
 }
 
 &>*:last-child{
   animation-duration: 15s;
+  @media (max-width: 30em){
+    animation-duration: 10s;
+  }
 }
 `
 
@@ -65,6 +72,14 @@ img{
   width: 100%;
   height: auto;
 }
+
+@media (max-width: 48em){
+width: 12rem; 
+}
+
+@media (max-width: 30em){
+  width: 10rem; 
+  }
 `
 
 
@@ -91,7 +106,11 @@ h1{
   font-size: ${props => props.theme.fontmd};
   color: ${props => props.theme.body};  
   font-weight:600;
-  
+
+  @media (max-width: 30em){
+    font-size: ${props => props.theme.fontsm}; 
+    }
+}
 `
 
 const Price = styled.span`
