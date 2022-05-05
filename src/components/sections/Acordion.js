@@ -14,6 +14,10 @@ display: flex;
 flex-direction: column;
 border-bottom: 1px solid ${props => props.theme.corouselColor};
 margin: 1rem auto;
+
+@media(max-width: 48em){
+  margin: 0.2rem 0;
+}
 `
 const Title = styled.div`
 font-size: ${props => props.theme.fontsm};
@@ -45,6 +49,9 @@ svg{
   fill:${props => props.theme.corouselColor};
 }
 
+@media(max-width: 48em){
+  font-size: ${props => props.theme.fontxl};
+}
 `
 
 const Acordion = ({title, children}) => {

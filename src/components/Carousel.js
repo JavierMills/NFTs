@@ -62,6 +62,13 @@ height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  img{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }
 
 .swiper-button-next{

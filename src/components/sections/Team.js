@@ -33,6 +33,11 @@ justify-content: center;
 align-items: center;
 margin: 1rem auto;
 border-bottom: 2px solid ${props => props.theme.text};
+
+@media(max-width: 40em){
+  font-size: ${props => props.theme.fontxl};
+
+}
 `
 const Container = styled.div`
 width: 75%;
@@ -94,6 +99,11 @@ backdrop-filter: blur(4px);
   img{
     transform: translateY(-2rem) scale(1.2);
   }
+}
+
+@media(max-width: 30em){
+  width:70vw;
+  
 }
 `
 const Name = styled.h2`

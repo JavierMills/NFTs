@@ -56,6 +56,7 @@ list-style: none;
 
   flex-direction: column;
   justify-content: center;
+  touch-action: none;
 }
 `
 
