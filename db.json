@@ -1,23 +1,6 @@
 {
     "Selectivas":[
         
-    {
-        "idFolio": 1,
-        "status": "CapturarSolicitud",
-        "Icon": "",
-        "Estatus": "Capturar Solicitud"  ,
-        "Buc": "",
-        "Acreditado": "",
-        "Solicitado":1234,
-        "Solicito": "2015/11/26",
-        "A": "",
-        "Z": "",
-        "C": "",
-        "E": "",
-        "Archivos": "",
-        "G":"",
-        "SLAS": ""
-      },
       {
         "idFolio": 2,
         "status": "NegocioInternacional",
